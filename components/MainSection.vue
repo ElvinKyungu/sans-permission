@@ -1,90 +1,144 @@
 <script setup lang="ts">
-import Badge from './icons/Badge.vue';
-import type Cursor from './icons/Cursor.vue';
 </script>
 
 <template>
-  <section class="grid grid-cols-12 min-h-screen px-32 mt-10">
-    <div class="col-span-3 bg-indigo-300 relative">
-      <div class="flex space-x-4">
-        <button class="flex gap-2 items-center py-2 px-5 border rounded-full border-[#18016b]">
-          <Badge class="text-green-400"/>
-          <span>Business</span>
-        </button>
-        <button class="flex gap-2 items-center py-2 px-5 border rounded-full border-[#57c049]">
-          <IconsCursor/>
-          <span>Artificial Intelligente</span>
-        </button>
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12 max-h-screen px-5 sm:px-10 md:px-20 lg:px-32 mt-10 space-x-5 sm:space-x-10">
+    <div class="col-span-12 sm:col-span-6 lg:col-span-3 mt-10 sm:mt-14">
+      <div>
+        <h1 class="text-lg sm:text-xl font-medium">Transformez vos compétences en revenus grâce à l'infopreneuriat. <span class="text-[#29ce45]">23</span></h1>
+        <div class="w-full mt-1 h-[1px] bg-black"></div>
+        <p class="mt-3 sm:mt-5 text-sm sm:text-base">Antoine Blanco vous aide à transformer vos compétences en revenus grâce à des formations en ligne rentables.</p>
       </div>
-      <!-- <div class="text-8xl uppercase text-nowrap">
-        <h1 class="">Where your</h1>
-        <h1 class="">Mental health</h1>
-        <h1 class="flex gap-2">
-          <Badge class="w-10 h-10"/>
-          <span>Flourishes</span>
-        </h1>
-      </div> -->
-      <div id="outer" class="text-8xl uppercase text-nowrap ">
-        <div id="inner-container">
-          <div class="innertext"><span>Where your</span></div>
-          <div class="innertext"><span>Mental health</span></div>
-          <div class="innertext"><span>Flourishes</span></div>
+      <div class="relative mt-10 sm:mt-14 h-[20rem] sm:h-[30rem]">
+        <img src="@/assets/images/antoine.jpg" class="w-full rounded-3xl h-full bg-cover object-cover absolute" alt="">
+        <div class="relative grid grid-cols-12 p-5 justify-between h-full">
+          <div class="flex items-start gap-2 text-white col-span-12 justify-center">
+            <div class="bg-black/10 border-white/50 border backdrop-blur-2xl flex gap-2 py-2 rounded-full px-5">
+              <IconsBadge/>
+              <h3>Coaching</h3>
+            </div>
+            <div class="bg-black/30 border-white/50 border backdrop-blur-2xl flex gap-2 py-2 rounded-full px-5">
+              <IconsBadge/>
+              <h3>Croissance</h3>
+            </div>
+          </div>
+          <div class="z-20 absolute bottom-5 left-5">
+            <ul class="flex gap-3">
+              <li class="w-5 h-5 bg-white/30 rounded-full"></li>
+              <li class="w-5 h-5 "></li>
+            </ul>
+            <ul class="flex gap-3 mt-3">
+              <li class="w-5 h-5 bg-white/60 rounded-full"></li>
+              <li class="w-5 h-5 bg-white/60 rounded-full"></li>
+            </ul>
+          </div>
+          <div 
+            class="bg-white/10 text-white backdrop-blur-md rounded-3xl absolute top-3/4 left-1/2 -translate-y-1/2 -translate-x-1/2 px-5 py-7 z-[9999] w-3/4 border border-white/20"
+          >
+            <div class="flex justify-between items-center gap-10">
+              <h1 class="text-2xl sm:text-4xl font-semibold">+10k/MRR</h1>
+              <IconsArrowUp/>
+            </div>
+            <p class="mt-3 text-white text-sm sm:text-base">Transformez vos compétences en revenus grâce à l'infopreneuriat.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-span-6 bg-slate-200 relative z-10">
-      d
+    <!-- Section 2 -->
+    <div class="col-span-12 sm:col-span-6 lg:col-span-6 relative bg-[#18016b] rounded-3xl h-[60vh] sm:h-[85vh] mt-10 sm:mt-14">
+      <img src="@/assets/images/Yomi-Denzel.-1-removebg-preview.png" class="absolute rounded-lg h-full w-full z-20" alt="">
+      <h1 class="text-6xl sm:text-[10rem] font-medium absolute left-1/2 -translate-x-1/2 text-white">YOMI</h1>
+      <h1 class="text-6xl sm:text-[10rem] font-medium absolute left-1/2 top-2 -translate-x-1/2 text-[#c7c2c2]">YOMI</h1>
+      <div class="relative z-20 h-full w-full">
+        <div class="absolute col-auto right-5 top-5">
+          <ul class="flex gap-3">
+            <li class="w-5 h-5 bg-white/50 rounded-full"></li>
+            <li class="w-5 h-5 bg-white/50 rounded-full"></li>
+          </ul>
+          <ul class="flex gap-3 mt-3">
+            <li class="w-5 h-5"></li>
+            <li class="w-5 h-5 bg-white/50 rounded-full"></li>
+          </ul>
+        </div>
+        <div 
+          class="bg-white/10 text-white backdrop-blur-lg rounded-3xl absolute top-2/3 left-2/3 -translate-y-1/2 border border-white/20 -translate-x-1/2 px-5 py-7 z-[9999] w-3/4 sm:w-1/2"
+        >
+          <div class="flex justify-between items-center gap-10">
+            <h1 class="text-2xl sm:text-4xl font-semibold">+75k/MRR</h1>
+            <IconsArrowUp/>
+          </div>
+          <p class="mt-3 text-white text-sm sm:text-lg">
+            Maîtrisez le dropshipping et développez un e-commerce à succès. <br>
+            Transforme vos ambitions en boutiques en ligne à succès.
+          </p>
+        </div>
+        <div class="relative flex items-end h-full justify-between p-5">
+          <div class="col-auto left-5 bottom-5">
+            <ul class="flex gap-3">
+              <li class="w-5 h-5 bg-white/50 rounded-full"></li>
+              <li class="w-5 h-5 "></li>
+            </ul>
+            <ul class="flex gap-3 mt-3">
+              <li class="w-5 h-5 bg-white/50 rounded-full"></li>
+              <li class="w-5 h-5 bg-white/50 rounded-full"></li>
+            </ul>
+          </div>
+          <div class="flex gap-2 text-white">
+            <div class="bg-white/10 border-white/50 border backdrop-blur-2xl flex gap-2 py-2 rounded-full px-5">
+              <IconsBadge/>
+              <h3>Rediscover your Inner peace</h3>
+            </div>
+            <div class="bg-white/10 border-white/50 border backdrop-blur-2xl flex gap-2 py-2 rounded-full px-5">
+              <IconsBadge/>
+              <h3>Hostic well being</h3>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-span-3 ">
+    <!-- Section 3 -->
+    <div class="col-span-12 sm:col-span-6 lg:col-span-3 mt-10 sm:mt-14">
+      <div>
+        <h1 class="text-lg sm:text-xl font-medium">Des conseils sur mesure pour vos projets entrepreneuriaux.</h1>
+        <div class="w-full mt-1 h-[1px] bg-black"></div>
+        <p class="mt-3 sm:mt-5 text-sm sm:text-base">
+          Avec "Better Call with Ouss", Oussama guide les entrepreneurs vers des décisions stratégiques. Chaque appel est une opportunité de débloquer votre potentiel.
+        </p>
+      </div>
+      <div class="relative mt-10 sm:mt-14 h-[20rem] sm:h-[30rem]">
+        <img src="@/assets/images/ouss.jpg" class="w-full rounded-3xl h-full bg-cover object-cover absolute" alt="">
+        <div class="relative grid grid-cols-12 p-5 justify-between h-full">
+          <div class="flex items-start gap-2 text-white col-span-12 justify-end">
+            <div class="bg-white/10 border-white/50 border backdrop-blur-2xl flex gap-2 py-2 rounded-full px-5">
+              <IconsBadge/>
+              <h3>Entrepreneuriat</h3>
+            </div>
+            <div class="bg-white/10 border-white/50 border backdrop-blur-2xl flex gap-2 py-2 rounded-full px-5">
+              <IconsBadge/>
+              <h3>Conseils</h3>
+            </div>
+          </div>
+          <div class="z-20 absolute bottom-5 left-5">
+            <ul class="flex gap-3">
+              <li class="w-5 h-5 bg-white/30 rounded-full"></li>
+              <li class="w-5 h-5 "></li>
+            </ul>
+            <ul class="flex gap-3 mt-3">
+              <li class="w-5 h-5 bg-white/60 rounded-full"></li>
+              <li class="w-5 h-5 bg-white/60 rounded-full"></li>
+            </ul>
+          </div>
+          <div 
+            class="bg-white/10 text-white backdrop-blur-md rounded-3xl absolute top-3/4 left-1/2 -translate-y-1/2 -translate-x-1/2 px-5 py-7 z-[9999] w-3/4 border border-white/20"
+          >
+            <div class="flex justify-between items-center gap-10">
+              <h1 class="text-2xl sm:text-4xl font-semibold">+500k/MRR</h1>
+              <IconsArrowUp/>
+            </div>
+            <p class="mt-3 text-white text-sm sm:text-base">Améliorez vos projets entrepreneuriaux avec un mentor expérimenté.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
-
-<style scoped>
-#outer {
-  width: 100%;
-  height: 400px;
-  border-radius: 20px;
-   position: relative;
-}
-#inner-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  bottom: 0px;
-}
-.innertext {
-  display: inline;
-  position: relative;
-  border-top-right-radius: 20px;
-  background-color: #fff;
-  padding: 5px 25px 0px 5px;
-  z-index: 99;
-  color: #000;
-}
-.innertext:first-child::before,
-.innertext::after {
-  content: "";
-  display: block;
-  width: 40px;    /* double the radius */
-  height: 40px;   /* double the radius */
-  background-color: transparent;
-  position: absolute;
-  border-bottom-left-radius: 20px;
-  box-shadow: 0 20px 0 0 #fff;  
-}
-.innertext::before {
-  top: -40px;
-  left: 0;
-}
-.innertext::after {
-  right: -2.2rem;
-  top: 62px;
-  z-index: 0 !important;
-}
-.innertext span {
-  position: relative;
-  z-index: 1;   /* to overcome the overlapping with the text */
-}
-</style>

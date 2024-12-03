@@ -1,9 +1,9 @@
 <script setup>
-import { onMounted } from 'vue';
-import gsap from 'gsap';
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 
 onMounted(() => {
-  const navItems = document.querySelectorAll('.nav-item');
+  const navItems = document.querySelectorAll('.nav-item')
 
   navItems.forEach(item => {
     item.addEventListener('mouseenter', () => {
