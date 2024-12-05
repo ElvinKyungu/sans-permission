@@ -1,9 +1,9 @@
 <script setup>
-import { onMounted } from 'vue';
-import gsap from 'gsap';
+import { onMounted } from 'vue'
+import gsap from 'gsap'
 
 onMounted(() => {
-  const navItems = document.querySelectorAll('.nav-item');
+  const navItems = document.querySelectorAll('.nav-item')
 
   navItems.forEach(item => {
     item.addEventListener('mouseenter', () => {
@@ -28,6 +28,12 @@ onMounted(() => {
     </nuxt-link>
     <nav>
       <ul class="flex space-x-28">
+        <li class="cursor-pointer nav-item">
+          <nuxt-link class="relative" to="">
+            <span>Home</span>
+          </nuxt-link>
+          <span class="border-anim"></span>
+        </li>
         <li class="cursor-pointer nav-item">
           <nuxt-link class="relative" to="">
             <span>Podcast</span>
