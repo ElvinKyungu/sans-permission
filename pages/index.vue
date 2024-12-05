@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import videoIntro from '@/assets/videos/intro.mp4'
 const isMuted = ref(true);
 const videoRef = ref<HTMLVideoElement | null>(null);
 
@@ -13,7 +13,9 @@ const toggleMute = () => {
 <template>
   <main>
     <Header/>
-    <div class="relative w-full h-[90vh] overflow-hidden">
+    <HomeSection/>
+
+    <!-- <div class="relative w-full h-[90vh] overflow-hidden">
       <video
         ref="videoRef"
         class="absolute top-0 left-0 w-full h-full object-cover"
@@ -22,8 +24,10 @@ const toggleMute = () => {
         loop
         playsinline
       >
-        <source src="@/assets/videos/intro.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la vidéo.
+        <source :src="videoIntro" type="video/webp">
+        <source :src="videoIntro" type="video/mp4" />
+        <source :src="videoIntro" type="video/webm" />
+        Your browser does not support the video tag.
       </video>
       <div class="absolute inset-0 bg-black/50"></div>
       <button
@@ -32,7 +36,7 @@ const toggleMute = () => {
       >
         {{ isMuted ? 'Activer le son' : 'Couper le son' }}
       </button>
-    </div>
+    </div> -->
     <MainSection/>
   </main>
 </template>
