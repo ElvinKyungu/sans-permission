@@ -30,6 +30,12 @@ onMounted(() => {
       <ul class="flex space-x-28">
         <li class="cursor-pointer nav-item">
           <nuxt-link class="relative" to="">
+            <span>Home</span>
+          </nuxt-link>
+          <span class="border-anim"></span>
+        </li>
+        <li class="cursor-pointer nav-item">
+          <nuxt-link class="relative" to="">
             <span>Podcast</span>
             <span class="absolute -top-3 font-bold text-sm">1.6k</span> 
           </nuxt-link>

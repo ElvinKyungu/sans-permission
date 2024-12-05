@@ -42,10 +42,10 @@ import gsap from 'gsap'
             </div>
           </div>
           <div class="relative h-full w-full">
-            <div class="mt-4 mr-5 flex justify-end space-x-3 z-50">
-              <IconNetwork/>
-              <IconWifi />
-              <IconBattery />
+            <div class="mt-4 mr-5 flex justify-end items-center space-x-1 z-50">
+              <IconsBattery class="w-5 h-5"/>
+              <IconsWifi class="w-5 h-5"/>
+              <IconsNetwork class="w-5 h-5"/>
             </div>
           </div>
         </div>
