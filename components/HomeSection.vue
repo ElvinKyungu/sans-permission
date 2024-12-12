@@ -8,7 +8,7 @@
       PODCAST
     </h1>
     <div class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 w-full px-4 sm:px-8 md:px-16">
-      <div class="col-span-1 sm:col-span-2 md:col-span-4 flex flex-col justify-between h-full">
+      <div class="col-span-1 sm:col-span-2 md:col-span-4 flex flex-col h-full">
         <div class="flex justify-between items-center w-full">
           <span class="uppercase text-gray-400 text-sm sm:text-lg">Business</span>
           <div class="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full border-4 border-dotted border-gray-400">
@@ -43,13 +43,13 @@
       </div>
 
       <!-- Right Column -->
-      <div class="col-span-1 sm:col-span-2 md:col-span-4 flex flex-col justify-between h-full mt-12 sm:mt-24">
+      <div class="col-span-1 sm:col-span-2 md:col-span-4 flex flex-col h-full mt-12 sm:mt-24">
         <div class="grid grid-cols-12 gap-4">
           <div class="col-span-12 sm:col-span-6">
-            <span class="uppercase text-gray-400 text-sm sm:text-lg">Tout savoir</span>
+            <span class="uppercase text-gray-300 text-sm sm:text-lg">Tout savoir</span>
           </div>
           <div class="col-span-12 sm:col-span-6">
-            <p class="text-sm sm:text-lg text-gray-400">
+            <p class="text-sm sm:text-lg text-gray-300">
               Plongez au cœur de stratégies innovantes, d'histoires inspirantes, et de conseils pratiques pour transformer vos ambitions en succès.
             </p>
           </div>
