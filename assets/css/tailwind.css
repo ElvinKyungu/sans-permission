@@ -53,7 +53,6 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-  font-family: Inter;
   font-size: var(--size);
   padding: var(--scene-pad);
   box-sizing: border-box;
@@ -308,7 +307,7 @@ body {
 }
 .content .text:after {
   order: 2;
-  content: "Le meilleur podcast pour le business dans l'écosystème francophone";
+  content: "Le meilleur podcast pour le business pour les francophones";
   opacity: 0.5;
 }
 .content .right {
