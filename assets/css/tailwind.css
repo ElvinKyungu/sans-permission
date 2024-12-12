@@ -42,9 +42,7 @@
     opacity: 1;
   }
 }
-body {
-  background: #00000a;
-}
+
 
 .scene {
   display: flex;
