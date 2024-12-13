@@ -68,45 +68,63 @@ const toggleMute = () => {
       </div>
     </section>
     <!-- Real Estate Section -->
-    <section class="bg- bg-gradient-to-l from-yellow-50 to-green-50 py-16 w-full">
-      <div class=" grid grid-cols-12 space-x-5 px-8 sm:px-32 w-full relative space-y-8 lg:space-y-0">
+    <section class="bg-gradient-to-l from-yellow-50 to-green-50 py-16 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 px-4 sm:px-8 lg:px-32 w-full relative">
         <!-- Image -->
-        <div class="col-span-9 w-full rounded-lg overflow-hidden shadow-lg">
+        <div class="lg:col-span-9 w-full rounded-lg overflow-hidden shadow-lg">
           <img 
             src="@/assets/images/banner.png" 
             alt="Property Image" 
-            class="w-full h-full object-cover"
+            class="w-full h-64 sm:h-96 lg:h-full object-cover"
           />
         </div>
-
+    
         <!-- Content -->
-        <div class="col-span-3 bg-white rounded-lg shadow-lg p-6">
-          <h3 class="text-2xl font-bold mb-2">201 Prague Dr, San Jose, CA 95119</h3>
-          <div class="text-sm text-gray-600 mb-4 flex justify-between">
-            <div class="flex flex-col">
+        <div class="lg:col-span-3 bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+          <!-- Property Details -->
+          <div class="text-sm mb-4 w-full flex justify-between">
+            <div class="flex flex-col items-center">
               <span class="text-2xl font-bold">4</span>
-              <span>Beds</span>
+              <span class="text-gray-600">Beds</span>
             </div> 
-            <div class="flex flex-col">
+            <div class="flex flex-col items-center">
               <span class="text-2xl font-bold">3</span>
-              <span>sqft</span>
+              <span class="text-gray-600">Baths</span>
             </div> 
-            <div class="flex flex-col">
+            <div class="flex flex-col items-center">
               <span class="text-2xl font-bold">1,868</span>
-              <span>baths</span>
+              <span class="text-gray-600">Sqft</span>
             </div> 
           </div>
-          <p class="text-xl font-bold mb-4">$1,650,000</p>
-          
+    
+          <!-- Price and Revenue -->
+          <div class="flex flex-col sm:flex-row sm:justify-between w-full mb-4">
+            <p class="text-xl font-bold">$1,650,000</p>
+            <p class="text-xl text-gray-600">Revenu générés</p>
+          </div>
+    
+          <!-- Agent Profile -->
+          <div class="flex flex-col items-center mb-8">
+            <img 
+              src="@/assets/images/antoine.jpg"
+              alt="Agent Image" 
+              class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4"
+            />
+            <p class="text-sm font-bold text-center">Antoine Blanco</p>
+          </div>
+    
+          <!-- Appointment Button -->
           <button 
-            class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
-            Request a tour
+            class="w-full bg-black text-white py-3 rounded-full hover:bg-gray-800 transition">
+            Prendre un rendez-vous
           </button>
           <p class="text-xs text-gray-500 mt-2 text-center">Earliest at 11:00 tomorrow</p>
         </div>
       </div>
     </section>
+    
 
-    <!-- <MainSection/> -->
+    <Sponsors/>
+    <MainSection/>
   </main>
 </template>
