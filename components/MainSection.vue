@@ -46,9 +46,8 @@
     </div>
     <!-- Section 2 -->
     <div class="col-span-12 sm:col-span-6 lg:col-span-4 relative bg-[#18016b] rounded-3xl mt-10 sm:mt-14">
-      <img src="@/assets/images/Yomi-Denzel.-1-removebg-preview.png" class=" rounded-lg h-full w-full z-20" alt="">
+      <img src="@/assets/images/Yomi-Denzel.-1-removebg-preview.png" class=" rounded-lg   z-20" alt="">
       <h1 class="text-6xl sm:text-[10rem] font-medium absolute left-1/2 -translate-x-1/2 text-white">YOMI</h1>
-      <h1 class="text-6xl sm:text-[10rem] font-medium absolute left-1/2 top-2 -translate-x-1/2 text-[#c7c2c2]">YOMI</h1>
       <div class="relative z-20 h-full w-full">
         <div class="absolute col-auto right-5 top-5">
           <ul class="flex gap-3">
