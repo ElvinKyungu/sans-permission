@@ -81,26 +81,41 @@ const toggleMute = () => {
 
         <!-- Content -->
         <div class="col-span-3 bg-white rounded-lg shadow-lg p-6">
-          <h3 class="text-2xl font-bold mb-2">201 Prague Dr, San Jose, CA 95119</h3>
-          <div class="text-sm text-gray-600 mb-4 flex justify-between">
+          <!-- <h3 class="text-xl mb-2 text-gray-600">201 Prague Dr, <br> San Jose, CA 95119</h3> -->
+          <div class="text-sm mb-4 flex justify-between">
             <div class="flex flex-col">
-              <span class="text-2xl font-bold">4</span>
-              <span>Beds</span>
+              <span class="text-2xl">4</span>
+              <span class="text-gray-600">Beds</span>
             </div> 
             <div class="flex flex-col">
-              <span class="text-2xl font-bold">3</span>
-              <span>sqft</span>
+              <span class="text-2xl">3</span>
+              <span class="text-gray-600">sqft</span>
             </div> 
             <div class="flex flex-col">
-              <span class="text-2xl font-bold">1,868</span>
-              <span>baths</span>
+              <span class="text-2xl">1,868</span>
+              <span class="text-gray-600">baths</span>
             </div> 
           </div>
-          <p class="text-xl font-bold mb-4">$1,650,000</p>
-          
+          <div class="flex space-x-3">
+            <p class="text-xl font-bold mb-4">$1,650,000</p>
+            <p class="text-xl">revenu générés</p> 
+          </div>
+          <div class="flex flex-col items-center mb-8">
+            <img 
+              src="@/assets/images/antoine.jpg"
+              alt="Episode Image" 
+              class="w-32 h-32 rounded-full mr-4"
+            />
+            <div>
+              <p class="text-sm font-bold text-center mt-5">Antoine Blanco</p>
+            </div>
+          </div>
+          <div>
+            <img src="" alt="">
+          </div>
           <button 
-            class="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
-            Request a tour
+            class="w-full bg-black text-white py-3 rounded-full hover:bg-gray-800 transition">
+            Prendre un rendez-vous
           </button>
           <p class="text-xs text-gray-500 mt-2 text-center">Earliest at 11:00 tomorrow</p>
         </div>
